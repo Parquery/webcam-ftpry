@@ -21,7 +21,7 @@ with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='webcam-ftpry',
-    version='1.0.0',
+    version='1.0.2',
     description='Captures images from a web cam and uploads them to an FTP server',
     long_description=long_description,
     url='https://bitbucket.org/parqueryopen/webcam-ftpry',
@@ -44,4 +44,5 @@ setup(
         'test': ['pyftpdlib'],
         'dev': ['mypy==0.560', 'pylint==1.8.2', 'yapf==0.20.2']
     },
-    scripts=['webcam_ftpry'])
+    py_modules=['webcam_ftpry'],
+    scripts=['bin/webcam_ftpry'])
