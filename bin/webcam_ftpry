@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+
+import webcam_ftpry
+
+if __name__ == "__main__":
+    webcam_ftpry.main()

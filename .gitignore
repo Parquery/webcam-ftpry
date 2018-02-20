@@ -5,3 +5,4 @@ venv3
 .precommit_hashes
 dist/
 *.egg-info
+build/
