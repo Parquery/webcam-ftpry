@@ -21,20 +21,19 @@ with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='webcam-ftpry',
-    version='1.0.2',
+    version='1.0.3',
     description='Captures images from a web cam and uploads them to an FTP server',
     long_description=long_description,
     url='https://bitbucket.org/parqueryopen/webcam-ftpry',
     author='Marko Ristin',
     author_email='marko@parquery.com',
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 5 - Production/Stable',
 
         # Indicate who your project is intended for
-        'Intended Audience :: Developers',
+        'Intended Audience :: End Users/Desktop',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
     ],
     keywords='webcam ftp image',
     python_requires='>=3.5',
@@ -45,4 +44,4 @@ setup(
         'dev': ['mypy==0.560', 'pylint==1.8.2', 'yapf==0.20.2']
     },
     py_modules=['webcam_ftpry'],
-    scripts=['bin/webcam_ftpry'])
+    scripts=['bin/webcam-ftpry'])
