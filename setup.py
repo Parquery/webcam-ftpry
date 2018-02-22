@@ -12,12 +12,8 @@ from setuptools import setup, find_packages
 
 here = os.path.abspath(os.path.dirname(__file__))  # pylint: disable=invalid-name
 
-# Get the long description from the README file
 with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()  # pylint: disable=invalid-name
-
-# Arguments marked as "Required" below must be included for upload to PyPI.
-# Fields marked as "Optional" may be commented out.
 
 setup(
     name='webcam-ftpry',
@@ -29,8 +25,6 @@ setup(
     author_email='marko@parquery.com',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
-
-        # Indicate who your project is intended for
         'Intended Audience :: End Users/Desktop',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.5',
