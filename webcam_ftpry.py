@@ -91,7 +91,7 @@ class Params:
         self.device_id = 0
         self.operation_dir = None  # type: Optional[pathlib.Path]
         self.period = 0.0
-        self.angle = 0.0
+        self.angle = None  # type: Optional[float]
         self.hostname = ''
         self.port = 0
         self.user = ''
@@ -180,7 +180,7 @@ def main() -> None:
     params.device_id = int(args.device_id)
     params.operation_dir = pathlib.Path(args.operation_dir) if args.operation_dir else None
     params.period = int(args.period)
-    params.angle = float(args.angle)
+    params.angle = float(args.angle) if args.angle else None
     params.hostname = str(args.hostname)
     params.port = int(args.port)
     params.user = str(args.user)
