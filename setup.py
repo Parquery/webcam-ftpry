@@ -17,10 +17,10 @@ with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='webcam-ftpry',
-    version='1.0.5',
+    version='1.0.6',
     description='Captures images from a web cam and uploads them to an FTP server',
     long_description=long_description,
-    url='https://bitbucket.org/parqueryopen/webcam-ftpry',
+    url='https://github.com/Parquery/webcamp-ftpry',
     author='Marko Ristin',
     author_email='marko@parquery.com',
     classifiers=[
